@@ -9,7 +9,7 @@
     ],
 	"require": {
 		"guzzlehttp/guzzle": "~6.0",
-        "gufy/cpanel-whm": "dev-master",
+        "gufy/cpanel-whm": "^1.0",
         "hugsbrugs/php-sftp": "^1.0",
         "degagne/libssh2": "^1.2"
 	},
