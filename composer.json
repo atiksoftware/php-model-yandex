@@ -1,0 +1,21 @@
+{
+    "name": "atiksoftware/php-model-yandex",
+    "description": "PHP Yandex API Manager",
+    "authors": [
+        {
+            "name": "Atiksoftware Corporation",
+            "email": "atiksoftware@gmail.com"
+        }
+    ],
+	"require": {
+		"guzzlehttp/guzzle": "~6.0",
+        "gufy/cpanel-whm": "dev-master",
+        "hugsbrugs/php-sftp": "^1.0",
+        "degagne/libssh2": "^1.2"
+	},
+    "autoload": {
+		"psr-4" : {
+			"Atiksoftware\\Yandex\\" : "src"
+		}
+	}
+}
