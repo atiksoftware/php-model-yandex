@@ -134,7 +134,7 @@
 					$still = false;
 				}
 			}
-			$this->saveDataToFile($list,"getDomains.json");
+			// $this->saveDataToFile($list,"getDomains.json");
 			return $list;
 		}
 
@@ -150,7 +150,7 @@
 			$data = $this->getData("/api2/admin/domain/register",[ ],[
 				"domain" => $domain
 			]);
-			$this->saveDataToFile($data,"domainRegister.json");
+			// $this->saveDataToFile($data,"domainRegister.json");
 
 			return $data;
 		}
@@ -160,7 +160,7 @@
 			$data = $this->getData("/api2/admin/domain/registration_status",[
 				"domain" => $domain
 			],[ ]);
-			$this->saveDataToFile($data,"domainRegisterStatus.json");
+			// $this->saveDataToFile($data,"domainRegisterStatus.json");
 
 			return $data;
 		}
@@ -208,7 +208,7 @@
 					$still = false;
 				}
 			}
-			$this->saveDataToFile($list,"getEmainsInDomain.json");
+			// $this->saveDataToFile($list,"getEmainsInDomain.json");
 			return $list;
 		}
 
@@ -232,8 +232,8 @@
 				"login"    => $login,
 				"password" => $password,
 			]);
-			$this->saveDataToFile($data,"addEMainToDomain.json");
-			$this->saveDataToFile([$password],"addEMainToDomainPassword.json");
+			// $this->saveDataToFile($data,"addEMainToDomain.json");
+			// $this->saveDataToFile([$password],"addEMainToDomainPassword.json");
 			return $data;
 		}
 
@@ -272,8 +272,8 @@
 				$params["hinta"] = isset($params["hinta"]) ? $params["hinta"] : "3_".$this->newPassword();
 			}
 			$data = $this->getData("/api2/admin/email/edit",[],$params);
-			$this->saveDataToFile($data,"editEMailInDomain.json");
-			$this->saveDataToFile($params,"editEMailInDomainPrams.json");
+			// $this->saveDataToFile($data,"editEMailInDomain.json");
+			// $this->saveDataToFile($params,"editEMailInDomainPrams.json");
 			return $data;
 		}
 
@@ -290,7 +290,7 @@
 				"domain"   => $domain,
 				"login"    => $login,
 			]);
-			$this->saveDataToFile($data,"removeEmailInDomain.json"); 
+			// $this->saveDataToFile($data,"removeEmailInDomain.json"); 
 			return $data;
 		}
 
@@ -302,7 +302,7 @@
 			$data = $this->getData("/api2/admin/email/ml/list",[
 				"domain"    => $domain
 			],[ ]);
-			$this->saveDataToFile($data,"getEmailListFromDomain.json"); 
+			// $this->saveDataToFile($data,"getEmailListFromDomain.json"); 
 			return $data;
 		}
 		function addEmailListToDomain($domain = "", $maillist = ""){
